@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Memuat data
-days_file_path = "dayClean_df.csv"
+days_file_path = "dashboard/dayClean_df.csv"
 days_df = pd.read_csv(days_file_path)
 
 # Memuat Datetime
@@ -63,7 +63,7 @@ max_date = days_df["date"].max()
 # Membuat Sidebar
 with st.sidebar:
     # add logo
-    st.image("../logo/image.png")
+    st.image("logo/image.png")
     st.markdown("<h1 style='text-align: center;'>Date Filter</h1>", unsafe_allow_html=True)
 
     # mengambil start_date & end_date dari date_input
